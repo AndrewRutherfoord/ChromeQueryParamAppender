@@ -1,0 +1,15 @@
+{
+  "name": "Query Param Appender",
+  "description": "Appends query params to the current URL. They are stored in local storage, and is separated by host. So each website is stored separately. Useful during web development.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["https://*/*"]
+}
