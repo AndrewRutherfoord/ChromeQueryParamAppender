@@ -33,9 +33,21 @@
       </div>
     </form>
 
-    <div id="table"></div>
+    <!-- Table hidden in JS if no items in dictionary -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Key</th>
+          <th scope="col">Value</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody id="params-table-body">
+        <!-- Table Rows is rendered by Javascript -->
+      </tbody>
+    </table>
 
-
+    <!-- Button hidden in JS if no items in dictionary -->
     <button id="clear-button" class="btn btn-danger mb-2">Clear</button>
 
     <div id="data"></div>
